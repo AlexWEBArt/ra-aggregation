@@ -1,5 +1,5 @@
 import React from 'react';
-import Tables from './components/TablesFunc';
+import Tables from './components/TablesClass';
 import './css/index.css'
 
 // TODO:
