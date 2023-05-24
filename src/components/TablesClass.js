@@ -6,7 +6,7 @@ import getList from './FetchApiFunc';
 
 export default class Tables extends React.Component {
     state = {
-        url: 'https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hoc/aggregation/data/data.json/',
+        url: 'https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hoc/aggregation/data/data.json',
         list: []
     };
 

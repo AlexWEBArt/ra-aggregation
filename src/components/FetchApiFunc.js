@@ -1,23 +1,17 @@
-import data from '../data/data.json'
-
 export default async function getList(url) {
-    // const request = fetch(url, {
-    //     method: 'GET',
-    //     headers: {
-    //         'Access-Control-Allow-Origin': '*',
-    //         'Content-Type': 'application/json',
-    //     }
-    // });
+    const request = fetch(url, {
+        method: 'GET',
+    });
 
-    // const result = await request;
+    const result = await request;
 
-    // if (!result.ok) {
-    //     console.error('Ошибка!');
+    if (!result.ok) {
+        console.error('Ошибка!');
 
-    //     return
-    // }
+        return
+    }
 
-    // return await result.json()
+    const jsonData = await result.json()
 
-    return data
+    return jsonData
 }
